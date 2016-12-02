@@ -22,7 +22,7 @@ public class App {
 		RandomForest<Passenger, Integer> forest = new RandomForest<>(param);
 
 		forest.fit(train);
-		long count = train.stream().filter(pa -> forest.predict(pa).equals(pa.getResult())).count();
+		long count = train.stream().filter(pa -> forest.predict(pa).equals(pa.getSurvived())).count();
 		LOG.info("Success rate: {}%", String.format("%.2f", count * 100 / (double) train.size()));
 
 		List<ImmutablePair<String, Double>> rank = forest.importance();

@@ -29,12 +29,13 @@ public class CsvUtils {
 		FileWriter fileWriter = new FileWriter(file);
 		fileWriter.write("PassengerId,Survived\n");
 		for (Passenger p : passengerList) {
-			fileWriter.write(p.getPassengerId() + "," + p.getResult() + "\n");
+			fileWriter.write(p.getPassengerId() + "," + p.getSurvived() + "\n");
 		}
 		fileWriter.close();
 	}
 
-	public static <T> List<T> csvToBean(String filename, Class<T> clazz) throws IOException, IllegalAccessException, InstantiationException, InvocationTargetException {
+	public static <T> List<T> csvToBean(String filename, Class<T> clazz)
+			throws IOException, IllegalAccessException, InstantiationException, InvocationTargetException {
 		ClassLoader classloader = Thread.currentThread().getContextClassLoader();
 		String file = classloader.getResource(filename).getFile();
 		FileReader fReader = new FileReader(file);

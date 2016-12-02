@@ -3,9 +3,8 @@ package net.korriganed.broceliande.example.bean;
 import net.korriganed.broceliande.data.Feature;
 import net.korriganed.broceliande.data.FeatureType;
 import net.korriganed.broceliande.data.Target;
-import net.korriganed.broceliande.struct.IData;
 
-public class Passenger implements IData<Integer> {
+public class Passenger {
 
 	private Integer passengerId;
 	private Integer survived;
@@ -135,8 +134,4 @@ public class Passenger implements IData<Integer> {
 		this.embarked = embarked;
 	}
 
-	@Override
-	public Integer getResult() {
-		return getSurvived();
-	}
 }
