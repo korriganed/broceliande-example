@@ -63,6 +63,8 @@ public class CsvUtils {
 			}
 			result.add(t);
 		}
+		reader.close();
+
 		return result;
 	}
 
