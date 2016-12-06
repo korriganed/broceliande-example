@@ -44,7 +44,7 @@ public class CsvUtils {
 		List<T> result = new ArrayList<>();
 		nextLine = reader.readNext(); // Ignore header
 		HashMap<Integer, Method> headers = new HashMap<>();
-		Map<String, Method> setters = InspectionUtils.findSetter(Passenger.class);
+		Map<String, Method> setters = InspectionUtils.findSetter(clazz);
 		for (int i = 0; i < nextLine.length; i++) {
 			headers.put(i, setters.get(nextLine[i].toLowerCase()));
 		}
