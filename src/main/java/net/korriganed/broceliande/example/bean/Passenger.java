@@ -3,6 +3,7 @@ package net.korriganed.broceliande.example.bean;
 import net.korriganed.broceliande.data.Feature;
 import net.korriganed.broceliande.data.FeatureType;
 import net.korriganed.broceliande.data.Target;
+import net.korriganed.broceliande.data.TargetType;
 
 public class Passenger {
 
@@ -38,7 +39,7 @@ public class Passenger {
 		this.passengerId = passengerId;
 	}
 
-	@Target
+	@Target(TargetType.DISCRETE)
 	public Integer getSurvived() {
 		return survived;
 	}
