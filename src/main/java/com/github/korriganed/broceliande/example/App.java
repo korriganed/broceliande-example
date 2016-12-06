@@ -1,15 +1,15 @@
-package net.korriganed.broceliande.example;
+package com.github.korriganed.broceliande.example;
 
 import java.util.List;
 
+import com.github.korriganed.broceliande.algo.Parameter;
+import com.github.korriganed.broceliande.example.bean.Passenger;
 import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import net.korriganed.broceliande.algo.Parameter;
-import net.korriganed.broceliande.algo.RandomForest;
-import net.korriganed.broceliande.example.bean.Passenger;
-import net.korriganed.broceliande.example.util.CsvUtils;
+import com.github.korriganed.broceliande.algo.RandomForest;
+import com.github.korriganed.broceliande.example.util.CsvUtils;
 
 public class App {
 

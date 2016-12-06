@@ -1,4 +1,4 @@
-package net.korriganed.broceliande.example.util;
+package com.github.korriganed.broceliande.example.util;
 
 import java.io.File;
 import java.io.FileReader;
@@ -11,13 +11,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.github.korriganed.broceliande.example.bean.Passenger;
+import com.github.korriganed.broceliande.util.InspectionUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.opencsv.CSVReader;
-
-import net.korriganed.broceliande.example.bean.Passenger;
-import net.korriganed.broceliande.util.InspectionUtils;
 
 public class CsvUtils {
 

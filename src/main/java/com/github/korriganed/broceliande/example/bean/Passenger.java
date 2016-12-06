@@ -1,9 +1,9 @@
-package net.korriganed.broceliande.example.bean;
+package com.github.korriganed.broceliande.example.bean;
 
-import net.korriganed.broceliande.data.Feature;
-import net.korriganed.broceliande.data.FeatureType;
-import net.korriganed.broceliande.data.Target;
-import net.korriganed.broceliande.data.TargetType;
+import com.github.korriganed.broceliande.data.Feature;
+import com.github.korriganed.broceliande.data.FeatureType;
+import com.github.korriganed.broceliande.data.Target;
+import com.github.korriganed.broceliande.data.TargetType;
 
 public class Passenger {
 
